@@ -40,7 +40,3 @@ trait Bootstrap extends JQuery {
   def affix(methodName: String): Bootstrap = js.native
   
 }
-
-object Bootstrap {
-  implicit def jq2bs(jq: JQuery): Bootstrap = jq.asInstanceOf[Bootstrap]
-}
