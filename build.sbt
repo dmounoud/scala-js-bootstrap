@@ -30,11 +30,14 @@ jsDependencies ++= Seq(
     "org.webjars" % "bootstrap" % "3.3.6" / "bootstrap.js" minified "bootstrap.min.js" dependsOn "jquery.js"
 )
 
+scmInfo := Some(ScmInfo(
+    url("https://github.com/diadys/scala-js-bootstrap.git"),
+    "scm:git:git@github.com:diadys/scala-js-bootstrap.git",
+    Some("scm:git:git@github.com:diadys/scala-js-bootstrap.git")))
+    
+publishMavenStyle := true
+
 pomExtra :=
-  <scm>
-    <url>git@github.com:diadys/scala-js-bootstrap.git</url>
-    <connection>scm:git:git@github.com:diadys/scala-js-bootstrap.git</connection>
-  </scm>
   <developers>
     <developer>
       <id>diadys</id>
