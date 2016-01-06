@@ -5,7 +5,7 @@ name := "scala-js-bootstrap"
 
 description := "Scala.js Bootstrap Facade"
 
-version := "1.0"
+version := "1.3"
 
 organization := "ch.diadys"
 
