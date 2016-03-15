@@ -22,7 +22,7 @@ homepage := Some(url("https://github.com/diadys/scala-js-bootstrap"))
 scalaVersion := "2.11.7"
 
 libraryDependencies ++= Seq(
-  "be.doeraene" %%% "scalajs-jquery" % "0.8.1",
+  "be.doeraene" %%% "scalajs-jquery" % "0.9.0",
   "org.webjars" % "bootstrap" % "3.3.6"
 )
 
