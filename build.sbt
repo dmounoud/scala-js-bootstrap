@@ -5,7 +5,7 @@ name := "scala-js-bootstrap"
 
 description := "Scala.js Bootstrap Facade"
 
-version := "1.3"
+version := "1.6"
 
 organization := "ch.diadys"
 
@@ -19,10 +19,10 @@ licenses += "GPLv3" -> url("http://www.gnu.org/licenses/gpl-3.0.html")
 
 homepage := Some(url("https://github.com/diadys/scala-js-bootstrap"))
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.12.3"
 
 libraryDependencies ++= Seq(
-  "be.doeraene" %%% "scalajs-jquery" % "0.9.0"
+  "be.doeraene" %%% "scalajs-jquery" % "0.9.2"
 )
 
 scmInfo := Some(ScmInfo(
