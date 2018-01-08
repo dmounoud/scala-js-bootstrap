@@ -5,7 +5,7 @@ name := "scala-js-bootstrap"
 
 description := "Scala.js Bootstrap Facade"
 
-version := "1.3"
+version := "1.8"
 
 organization := "ch.diadys"
 
@@ -19,15 +19,19 @@ licenses += "GPLv3" -> url("http://www.gnu.org/licenses/gpl-3.0.html")
 
 homepage := Some(url("https://github.com/diadys/scala-js-bootstrap"))
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.12.4"
 
 libraryDependencies ++= Seq(
-  "be.doeraene" %%% "scalajs-jquery" % "0.8.1",
-  "org.webjars" % "bootstrap" % "3.3.6"
+  "be.doeraene" %%% "scalajs-jquery" % "0.9.2",
+  "org.webjars" % "bootstrap" % "3.3.7-1"
 )
 
+val jqueryVersion = "3.2.1"
+val bootstrapVersion = "3.3.7-1"
+
 jsDependencies ++= Seq(
-    "org.webjars" % "bootstrap" % "3.3.6" / "bootstrap.js" minified "bootstrap.min.js" dependsOn "jquery.js"
+	"org.webjars" % "jquery" % jqueryVersion / (jqueryVersion + "/dist/jquery.js") minified (jqueryVersion + "/dist/jquery.min.js"),
+    "org.webjars" % "bootstrap" % bootstrapVersion / "bootstrap.js" minified "bootstrap.min.js" dependsOn (jqueryVersion + "/dist/jquery.js")
 )
 
 scmInfo := Some(ScmInfo(
